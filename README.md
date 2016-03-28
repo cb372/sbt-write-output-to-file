@@ -17,7 +17,7 @@ but then you get the sbt logging version of your process's output, complete with
 Add the following to your `project/plugins.sbt` to add the plugin:
 
 ```
-resolvers += Resolver.bintray("cb372/sbt-plugins")
+resolvers += Resolver.bintrayIvyRepo("cb372", "sbt-plugins")
 addSbtPlugin("com.github.cb372" % "sbt-write-output-to-file" % "0.1")
 ```
 
