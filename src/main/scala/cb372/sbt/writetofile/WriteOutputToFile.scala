@@ -17,7 +17,7 @@ object WriteOutputToFile extends AutoPlugin {
     writeOutputToFile_append := false,
 
     fork in (Compile,run) := true,
-    outputStrategy in (Compile,run) := Some(new CustomOutput(new ReusableFileOutputStream(
+    outputStrategy in (Compile,run) := Some(CustomOutput(new ReusableFileOutputStream(
       writeOutputToFile_outputFile.value, 
       writeOutputToFile_append.value
     )))
