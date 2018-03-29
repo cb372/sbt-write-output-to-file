@@ -18,8 +18,10 @@ Add the following to your `project/plugins.sbt` to add the plugin:
 
 ```
 resolvers += Resolver.bintrayIvyRepo("cb372", "sbt-plugins")
-addSbtPlugin("com.github.cb372" % "sbt-write-output-to-file" % "0.1")
+addSbtPlugin("cb372" % "sbt-write-output-to-file" % "0.2")
 ```
+
+This version will work for both sbt 0.13.x and 1.x.
 
 Then add a line to your `build.sbt` to enable it:
 
